@@ -1,0 +1,44 @@
+Connections with ESP32 to Components:
+
+ESP32 -> HBridge:
+Pin D25 -> In1
+Pin D26 -> In2
+Pin D27 -> In3
+Pin D14 -> In4
+
+ESP32 -> Motor Encoder:
+Right Motor Encoder:
+Pin D4 -> C1
+Pin D16 -> C2
+Left Motor Encoder:
+Pin D32 -> C1
+Pin D33 -> C2
+
+ESP32 -> I2C Devices:
+3.3V -> VCC
+GND -> GND
+D22 -> SCL
+D21 -> SDA
+Right Lidar:
+D17 -> XSHUT
+Left Lidar:
+D18 -> XSHUT
+MPU6050:
+AD0 NOT CONNECTED
+X "->" ARROW POINTING FORWARD
+
+ESP32 -> IR Sensor (Front)
+D19 -> OUT
+
+=====
+Connections with HBridge to Components:
+
+HBridge -> Left Motor:
+OUT1 -> M1
+OUT2 -> M2
+
+HBridge -> Right Motor:
+OUT3 -> M1
+OUT4 -> M2
+
+
